@@ -1,0 +1,57 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------SLIDER---------------- */
+.slider{
+    display: flex;
+}
+
+.slider__visible{
+    width: 300px;
+    overflow: hidden;
+}
+
+.slider__content{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.5s;
+}
+
+.slider__btn{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid salmon;
+}
+
+.slider__btn--content{
+    flex-shrink: 0;
+    flex-basis: calc(100% / 3);
+}
+
+
+
+/* ---------------INNE---------------- */
+
+.info{
+    margin: 20px;
+    padding: 10px;
+    background-color: #cccccc;
+}
+.label{
+    font-weight: bolder;
+}
